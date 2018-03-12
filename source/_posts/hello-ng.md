@@ -1,7 +1,7 @@
 ---
 title: hello_ng
 date: 2018-03-09 09:59:48
-tags:
+tags: test
 ---
 
 ```javascript
