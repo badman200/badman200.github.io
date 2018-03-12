@@ -20,6 +20,6 @@ script:
 - hexo clean
 - hexo generate
 after_success:
-- git config --global user.name "Nikko"
+- git config --global user.name "badman200"
 - git config --global user.email "ningjiaguang@vip.qq.com"
 - hexo deploy
