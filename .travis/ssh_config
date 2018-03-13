@@ -3,3 +3,4 @@ User git
 StrictHostKeyChecking no
 IdentityFile ~/.ssh/id_rsa
 IdentitiesOnly yes
+UserKnownHostsFile /dev/null
