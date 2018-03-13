@@ -59,21 +59,22 @@ $ x = {-b \pm \sqrt{b^2-4ac} \over 2a}. $
 
 
 
-```flow                     // 流程
-st=>start: 开始|past:> http://www.baidu.com // 开始
-e=>end: 结束              // 结束
-c1=>condition: 条件1:>http://www.baidu.com[_parent]   // 判断条件
-c2=>condition: 条件2      // 判断条件
-c3=>condition: 条件3      // 判断条件
-io=>inputoutput: 输出     // 输出
-//----------------以上为定义参数-------------------------
+```flow
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
 
-//----------------以下为连接参数-------------------------
-// 开始->判断条件1为no->判断条件2为no->判断条件3为no->输出->结束
-st->c1(yes,right)->c2(yes,right)->c3(yes,right)->io->e
-c1(no)->e                   // 条件1不满足->结束
-c2(no)->e                   // 条件2不满足->结束
-c3(no)->e                   // 条件3不满足->结束
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
 ```
 
 
