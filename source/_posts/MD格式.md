@@ -79,8 +79,11 @@ c2(no)->op2->e
 
 
 ```sequence
-A->>B: 你好
-Note left of A: 我在左边     // 注释方向，只有左右，没有上下
-Note right of B: 我在右边
-B-->A: 很高兴认识你
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
 ```
+
+![image](http://7xt3kg.com1.z0.glb.clouddn.com/FgR4to9ZyyippJ5pUs_Pr8Q4ueJx)
+
+![image](http://7xt3kg.com1.z0.glb.clouddn.com/FgWB6kEJSGSkMrSnnO7JfP8w5YYs)
