@@ -78,9 +78,10 @@ theme: indigo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://github.com/badman200/badman200.github.io.git
-  - type: git
     repo: https://git.coding.net/Nikko_/blog.git
+  - type: git
+    repo: https://github.com/badman200/badman200.github.io.git
+  
 
 feed:
   type: atom
